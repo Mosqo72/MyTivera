@@ -1,0 +1,20 @@
+[
+  {
+    "id": "enq_1792352734476_4v68m",
+    "referenceId": "TIV-2026-9378",
+    "fullName": "Engr. Musa Bello",
+    "phone": "07033064125",
+    "email": "musa.bello@example.com",
+    "preferredContact": "phone",
+    "service": "residential-solar",
+    "serviceLabel": "Residential Solar System",
+    "location": "Gudu, Abuja",
+    "projectType": "residential",
+    "budget": "₦3,000,000 – ₦7,000,000",
+    "message": "Looking to install a 5kVA solar inverter system with lithium battery storage for a 4-bedroom duplex in Gudu.",
+    "submittedAt": "2026-10-18T19:45:34.477Z",
+    "ip": "127.0.0.1",
+    "deliveryStatus": "ready_pending_key",
+    "deliveryNote": "Stored securely in database. To route live email to tiveratechnologies@gmail.com, configure RESEND_API_KEY or SENDGRID_API_KEY in environment variables."
+  }
+]

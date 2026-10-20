@@ -1,0 +1,6 @@
+{
+  "name": "Tivera Technologies",
+  "description": "Professional solar energy, renewable power, and electrical solutions for homes and businesses in Abuja, Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

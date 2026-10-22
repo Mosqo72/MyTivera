@@ -26,7 +26,7 @@ export interface FaqItem {
 }
 
 export const COMPANY_CONFIG = {
-  name: 'Tivera Technologies',
+  name: 'Tivera Energies Limited',
   logoUrl: 'https://imgur.com/xPCRLrN.png',
   logoDirectUrl: 'https://i.imgur.com/xPCRLrN.png',
   logoLocalFallback: '/images/tivera-logo.png',
@@ -35,7 +35,7 @@ export const COMPANY_CONFIG = {
   heroImageLocalFallback: '/images/hero-power.png',
   tagline: 'Reliable Solar and General Power Solutions for Your Home and Business',
   subheadline:
-    'At Tivera Technologies, we help homes, businesses, and communities access dependable power through professional solar consultation, energy audits, system design, and renewable energy solutions tailored to their needs and budgets.',
+    'At Tivera Energies Limited, we help homes, businesses, and communities access dependable power through professional solar consultation, energy audits, system design, and renewable energy solutions tailored to their needs and budgets.',
   industry: 'Solar energy, renewable energy, electrical engineering, and power solutions',
   office: {
     address: 'Suite 31C, Anon Plaza, Gudu, FCT Abuja, Nigeria',
@@ -63,7 +63,7 @@ export const COMPANY_CONFIG = {
     enabled: true,
     displayNumber: '07033064125',
     cleanNumber: '2347033064125',
-    defaultMessage: 'Hello Tivera Technologies, I would like to make an enquiry regarding your solar and electrical services.',
+    defaultMessage: 'Hello Tivera Energies Limited, I would like to make an enquiry regarding your solar and electrical services.',
   },
 
   socials: {
@@ -75,7 +75,7 @@ export const COMPANY_CONFIG = {
   },
 
   mission:
-    'To deliver dependable, practical, and affordable solar and electrical solutions that meet customers\' energy needs.',
+    'To become a trusted African energy and infrastructure development company, delivering innovative projects that power economic growth and create enduring value for investors and communities.',
   vision:
     'To contribute to a more energy-secure future through the responsible application of renewable energy and electrical engineering.',
 
@@ -380,7 +380,7 @@ export const COMPANY_CONFIG = {
     {
       question: 'Do you design solar mini-grids for communities or off-grid sites?',
       answer:
-        'Yes. Tivera Technologies provides engineering consultation and technical system design for solar mini-grids, rural electrification initiatives, agricultural processing clusters, and institutional campuses. Our scope includes load demand profiling, centralized solar photovoltaic array sizing, storage architecture, and low-voltage distribution planning.',
+        'Yes. Tivera Energies Limited provides engineering consultation and technical system design for solar mini-grids, rural electrification initiatives, agricultural processing clusters, and institutional campuses. Our scope includes load demand profiling, centralized solar photovoltaic array sizing, storage architecture, and low-voltage distribution planning.',
       category: 'services',
     },
     {
@@ -396,9 +396,9 @@ export const COMPANY_CONFIG = {
       category: 'general',
     },
     {
-      question: 'How can I contact Tivera Technologies?',
+      question: 'How can I contact Tivera Energies Limited?',
       answer:
-        'You can visit our office at Suite 31C, Anon Plaza, Gudu, FCT Abuja. You can also reach our engineering and support desks directly by calling 07033064125, emailing tiveratechnologies@gmail.com, or sending an email enquiry using this website. Our team responds promptly during regular business hours.',
+        'You can visit our office at Suite 31C, Anon Plaza, Gudu, FCT Abuja. You can also reach our engineering and support desks directly via telephone, emailing tiveratechnologies@gmail.com, or submitting an online enquiry through this website. Our team responds promptly during regular business hours.',
       category: 'general',
     },
   ] as FaqItem[],

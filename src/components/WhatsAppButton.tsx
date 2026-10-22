@@ -9,7 +9,7 @@ export const WhatsAppButton: React.FC = () => {
 
   const cleanNumber = '2347033064125';
   const whatsappUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(
-    COMPANY_CONFIG.whatsapp.defaultMessage || 'Hello Tivera Technologies, I would like to make an enquiry regarding your solar and general power solutions.'
+    COMPANY_CONFIG.whatsapp.defaultMessage || 'Hello Tivera Energies Limited, I would like to make an enquiry regarding your solar and general power solutions.'
   )}`;
 
   return (
@@ -24,7 +24,7 @@ export const WhatsAppButton: React.FC = () => {
           >
             <X className="w-3.5 h-3.5" />
           </button>
-          <p className="font-bold text-[#0868A8] mb-0.5">WhatsApp Tivera Technologies</p>
+          <p className="font-bold text-[#0868A8] mb-0.5">WhatsApp Tivera Energies Limited</p>
           <p className="text-slate-600">
             Chat directly with our engineering desk on WhatsApp for instant solar &amp; general power consultation.
           </p>
@@ -38,7 +38,7 @@ export const WhatsAppButton: React.FC = () => {
         rel="noopener noreferrer"
         onMouseEnter={() => setShowTooltip(true)}
         className="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group cursor-pointer focus:outline-none focus:ring-4 focus:ring-emerald-300"
-        aria-label="Chat with Tivera Technologies on WhatsApp"
+        aria-label="Chat with Tivera Energies Limited on WhatsApp"
         title="Chat on WhatsApp"
       >
         <span className="absolute -inset-1 rounded-full bg-[#25D366]/30 animate-ping pointer-events-none opacity-75" />

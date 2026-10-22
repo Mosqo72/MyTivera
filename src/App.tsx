@@ -40,7 +40,7 @@ export default function App() {
   const handleSelectService = (serviceId: string) => {
     handleOpenEnquiryForm(
       `Enquiry: ${serviceId.replace(/-/g, ' ')}`,
-      `Hello Tivera Technologies team, I am interested in your ${serviceId.replace(/-/g, ' ')} service and would like to request consultation.`
+      `Hello Tivera Energies Limited team, I am interested in your ${serviceId.replace(/-/g, ' ')} service and would like to request consultation.`
     );
   };
 
@@ -68,8 +68,15 @@ export default function App() {
         {/* Services Section */}
         <ServicesSection onSelectService={handleSelectService} />
 
-        {/* Why Choose Tivera Technologies */}
-        <WhyChooseUs />
+        {/* Why Choose Tivera Energies */}
+        <WhyChooseUs
+          onContactClick={() =>
+            handleOpenEnquiryForm(
+              'Strategic Partnership Enquiry',
+              'Hello Tivera Energies team, I would like to explore a partnership or collaboration regarding energy and infrastructure development.'
+            )
+          }
+        />
 
         {/* Dedicated Head Office & Direct Contact Section */}
         <ContactSection

@@ -96,7 +96,7 @@ export const OwnerEnquiryDrawer: React.FC<OwnerEnquiryDrawerProps> = ({ isOpen, 
           <div className="flex items-center gap-2">
             <Shield className="w-5 h-5 text-[#F58220]" />
             <div>
-              <h3 className="font-bold text-base leading-tight">Tivera Technologies Owner Portal</h3>
+              <h3 className="font-bold text-base leading-tight">Tivera Energies Limited Owner Portal</h3>
               <p className="text-xs text-blue-200">Enquiry Management & Notification Setup</p>
             </div>
           </div>
@@ -266,7 +266,7 @@ export const OwnerEnquiryDrawer: React.FC<OwnerEnquiryDrawerProps> = ({ isOpen, 
 
         {/* Footer */}
         <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
-          <span>Tivera Technologies · Anon Plaza, Gudu, Abuja</span>
+          <span>Tivera Energies Limited · Anon Plaza, Gudu, Abuja</span>
           <button
             onClick={onClose}
             className="px-3 py-1.5 bg-slate-200 hover:bg-slate-300 rounded text-slate-800 font-medium transition-colors cursor-pointer"

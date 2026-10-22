@@ -114,8 +114,8 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onExploreServices })
                       <Sun className="w-4 h-4 text-[#F58220]" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-white tracking-wide">Tivera Solar Engineering</p>
-                      <p className="text-[11px] text-slate-300">Clean, Quiet & Dependable Energy</p>
+                      <p className="text-xs font-bold text-white tracking-wide">Tivera Energies Limited</p>
+                      <p className="text-[11px] text-slate-300">Clean, Quiet &amp; Dependable Energy</p>
                     </div>
                   </div>
                   <span className="text-[11px] font-mono text-amber-300 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded">
@@ -130,8 +130,8 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onExploreServices })
           </div>
         </div>
 
-        {/* Full-Width 4-Column Capability Strip below hero split */}
-        <div className="mt-12 lg:mt-16 pt-8 border-t border-slate-200/90 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {/* Full-Width Capability Strip below hero split - mobile, tablet, and desktop responsive */}
+        <div className="mt-12 lg:mt-16 pt-8 border-t border-slate-200/90 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           <div className="space-y-1">
             <div className="flex items-center gap-2 text-[#0868A8]">
               <Sun className="w-5 h-5 text-[#F58220] shrink-0" />

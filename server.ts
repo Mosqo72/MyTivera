@@ -103,7 +103,7 @@ async function dispatchEmailNotification(enquiry: EnquiryRecord): Promise<{ deli
   const emailHtml = `
     <div style="font-family: Arial, sans-serif; max-width: 650px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
       <div style="background-color: #0868A8; color: #ffffff; padding: 24px 28px;">
-        <h1 style="margin: 0 0 6px 0; font-size: 22px; letter-spacing: -0.5px;">Tivera Technologies</h1>
+        <h1 style="margin: 0 0 6px 0; font-size: 22px; letter-spacing: -0.5px;">Tivera Energies Limited</h1>
         <p style="margin: 0; font-size: 14px; opacity: 0.9;">New Customer Enquiry Received · Ref: <strong>${enquiry.referenceId}</strong></p>
       </div>
       <div style="padding: 28px; background-color: #ffffff; color: #202833;">
@@ -161,7 +161,7 @@ ${enquiry.message}
 
         <div style="font-size: 12px; color: #94a3b8; border-top: 1px solid #e2e8f0; padding-top: 16px;">
           <p style="margin: 0;">Submitted on: ${new Date(enquiry.submittedAt).toUTCString()}</p>
-          <p style="margin: 4px 0 0 0;">Tivera Technologies · Suite 31C, Anon Plaza, Gudu, FCT Abuja · 07033064125</p>
+          <p style="margin: 4px 0 0 0;">Tivera Energies Limited · Suite 31C, Anon Plaza, Gudu, FCT Abuja</p>
         </div>
       </div>
     </div>
@@ -263,7 +263,7 @@ app.get('/api/config', (_req: Request, res: Response) => {
 
   res.json({
     status: 'online',
-    company: 'Tivera Technologies',
+    company: 'Tivera Energies Limited',
     recipientEmail: 'tiveratechnologies@gmail.com',
     headOffice: 'Suite 31C, Anon Plaza, Gudu, FCT Abuja, Nigeria',
     phones: ['07033064125'],
@@ -279,7 +279,7 @@ app.post('/api/enquiry', async (req: Request, res: Response) => {
   if (isRateLimited(clientIp)) {
     res.status(429).json({
       success: false,
-      error: 'Too many submissions from this connection. Please wait a few minutes before submitting another enquiry or call us directly at 07033064125.',
+      error: 'Too many submissions from this connection. Please wait a few minutes before submitting another enquiry or contact our engineering desk.',
     });
     return;
   }
@@ -316,7 +316,7 @@ app.post('/api/enquiry', async (req: Request, res: Response) => {
   // Nigerian & international phone validation
   const cleanPhone = (phone || '').replace(/[\s\-\(\)]/g, '');
   if (!cleanPhone || cleanPhone.length < 8 || !/^\+?[0-9]{8,15}$/.test(cleanPhone)) {
-    errors.phone = 'Please provide a valid phone number (e.g., 07033064125 or +2347033064125).';
+    errors.phone = 'Please provide a valid phone number (e.g., 080... or +234...).';
   }
 
   // Email format validation
@@ -342,7 +342,7 @@ app.post('/api/enquiry', async (req: Request, res: Response) => {
   }
 
   if (!consent) {
-    errors.consent = 'You must confirm consent for Tivera Technologies to contact you regarding this enquiry.';
+    errors.consent = 'You must confirm consent for Tivera Energies Limited to contact you regarding this enquiry.';
   }
 
   if (Object.keys(errors).length > 0) {
@@ -396,7 +396,7 @@ app.post('/api/enquiry', async (req: Request, res: Response) => {
     timestamp: newRecord.submittedAt,
     deliveryStatus: newRecord.deliveryStatus,
     deliveryNote: newRecord.deliveryNote,
-    message: `Thank you! Your enquiry has been received and logged under reference ${referenceId}. Our team at Tivera Technologies will contact you promptly.`,
+    message: `Thank you! Your enquiry has been received and logged under reference ${referenceId}. Our team at Tivera Energies Limited will contact you promptly.`,
   });
 });
 
@@ -472,6 +472,6 @@ async function setupVite() {
 
 setupVite().then(() => {
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Tivera Technologies server running on http://0.0.0.0:${PORT}`);
+    console.log(`Tivera Energies Limited server running on http://0.0.0.0:${PORT}`);
   });
 });

@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({
             <a href="#" className="flex items-center gap-2.5 text-xl font-bold text-white tracking-tight">
               <img
                 src={logoSrc}
-                alt="Tivera Technologies Logo"
+                alt="Tivera Energies Limited Logo"
                 referrerPolicy="no-referrer"
                 onError={handleLogoError}
                 className={logoError ? 'hidden' : 'h-8 sm:h-9 w-auto max-w-[120px] object-contain rounded'}
@@ -48,11 +48,11 @@ export const Footer: React.FC<FooterProps> = ({
                 </div>
               )}
               <div className="flex flex-col">
-                <span className="font-extrabold tracking-tight leading-tight text-[#0868A8]">
-                  Tivera Technologies
+                <span className="font-extrabold tracking-tight leading-tight text-[#0868A8] text-base sm:text-lg">
+                  Tivera Energies Limited
                 </span>
                 <span className="text-[10px] sm:text-[11px] font-semibold text-slate-300 tracking-wide leading-none">
-                  Solar &amp; General Power Solutions
+                  Powering Progress. Delivering Sustainable Energy Solutions and Building Infrastructure.
                 </span>
               </div>
             </a>
@@ -217,8 +217,8 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0868A8] shrink-0" />
-                <a href={COMPANY_CONFIG.phones[0].telLink} className="hover:text-white">
-                  {COMPANY_CONFIG.phones[0].number}
+                <a href={COMPANY_CONFIG.phones[0].telLink} className="hover:text-white transition-colors">
+                  Call Support Desk
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -245,7 +245,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Bar: Copyright & Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {currentYear} <span className="text-[#0868A8] font-semibold">Tivera Technologies</span>. All rights reserved.</p>
+          <p>© {currentYear} <span className="text-[#0868A8] font-semibold">Tivera Energies Limited</span>. All rights reserved.</p>
 
           <div className="flex items-center gap-6">
             <button

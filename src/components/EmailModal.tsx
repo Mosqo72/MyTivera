@@ -95,7 +95,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
       });
     } catch (err: any) {
       console.error('Email send error:', err);
-      setErrorMessage(err.message || 'Unable to deliver message. Please check your connection or call us at 07033064125.');
+      setErrorMessage(err.message || 'Unable to deliver message. Please check your connection or contact our support desk directly.');
     } finally {
       setIsSubmitting(false);
     }
@@ -126,7 +126,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
             </div>
             <div>
               <h3 className="text-base font-bold leading-tight">Send an Enquiry</h3>
-              <p className="text-xs text-blue-100">Direct consultation with Tivera Technologies (07033064125)</p>
+              <p className="text-xs text-blue-100">Direct consultation with Tivera Energies Limited</p>
             </div>
           </div>
           <button
@@ -148,7 +148,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
               <h4 className="text-lg font-bold text-slate-900">Enquiry Submitted Successfully!</h4>
               <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto leading-relaxed">
                 Thank you, <strong>{formData.fullName}</strong>. Your enquiry has been received under reference{' '}
-                <strong className="text-[#0868A8] font-mono">{successResult.referenceId}</strong> and routed to the Tivera Technologies engineering team.
+                <strong className="text-[#0868A8] font-mono">{successResult.referenceId}</strong> and routed to the Tivera Energies Limited engineering team.
               </p>
               <p className="text-[11px] text-slate-500">
                 An engineer will follow up directly at <strong>{formData.email}</strong> {formData.phone ? `or by phone at ${formData.phone}` : ''}.
@@ -212,7 +212,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
                   </label>
                   <input
                     type="tel"
-                    placeholder="e.g. 07033064125"
+                    placeholder="e.g. 0803 123 4567"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     disabled={isSubmitting}
@@ -268,7 +268,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
                     className="mt-0.5 rounded border-slate-300 text-[#0868A8] focus:ring-[#0868A8]"
                   />
                   <span className="text-xs text-slate-600">
-                    I agree to allow Tivera Technologies to contact me regarding this message.
+                    I agree to allow Tivera Energies Limited to contact me regarding this message.
                   </span>
                 </label>
               </div>

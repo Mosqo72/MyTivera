@@ -34,7 +34,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
           {type === 'privacy' ? (
             <>
               <p>
-                <strong>Tivera Technologies</strong> ("we," "our," or "the Company"), located at Suite 31C, Anon Plaza, Gudu, FCT Abuja, Nigeria, respects your privacy and is committed to protecting your personal information.
+                <strong>Tivera Energies Limited</strong> ("we," "our," or "the Company"), located at Suite 31C, Anon Plaza, Gudu, FCT Abuja, Nigeria, respects your privacy and is committed to protecting your personal information.
               </p>
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">1. Information We Collect</h4>
@@ -54,7 +54,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">3. Data Protection & Non-Disclosure</h4>
               <p>
-                We do not sell, rent, or trade your personal data to any external marketing agencies. Customer enquiries are stored in protected server databases accessible solely by Tivera Technologies engineering and administrative personnel.
+                We do not sell, rent, or trade your personal data to any external marketing agencies. Customer enquiries are stored in protected server databases accessible solely by Tivera Energies Limited engineering and administrative personnel.
               </p>
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">4. Contacting Us About Your Data</h4>
@@ -69,7 +69,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
           ) : (
             <>
               <p>
-                Welcome to the official website of <strong>Tivera Technologies</strong>. By browsing this website or submitting an enquiry, you agree to these Terms of Use.
+                Welcome to the official website of <strong>Tivera Energies Limited</strong>. By browsing this website or submitting an enquiry, you agree to these Terms of Use.
               </p>
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">1. Scope of Information</h4>
@@ -79,12 +79,12 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">2. Service Availability</h4>
               <p>
-                Tivera Technologies operates primarily out of Abuja, FCT, Nigeria. Availability of installation services outside Abuja is evaluated on a project-by-project basis depending on project scale and mobilization logistics.
+                Tivera Energies Limited operates primarily out of Abuja, FCT, Nigeria. Availability of installation services outside Abuja is evaluated on a project-by-project basis depending on project scale and mobilization logistics.
               </p>
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">3. Intellectual Property</h4>
               <p>
-                The company name, logos, system configurations, and original content published on this website are the property of Tivera Technologies.
+                The company name, logos, system configurations, and original content published on this website are the property of Tivera Energies Limited.
               </p>
 
               <h4 className="font-bold text-slate-900 pt-2 text-sm">4. Governing Law</h4>
